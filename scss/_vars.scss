@@ -1,0 +1,74 @@
+// 全部变量
+
+/* Transition 渐变
+-------------------------- */
+$--all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--fade-linear-transition: opacity 200ms linear !default;
+$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
+$--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
+
+/* Colors 颜色
+-------------------------- */
+$--color-white: #fff !default;
+$--color-black: #000 !default;
+
+$--color-primary: #f4e827 !default;
+
+$--color-price: #e53935 !default;
+$--color-emphasize: $--color-price !default;
+
+$--color-text-primary: #202020 !default;
+$--color-text-regular: #666666 !default;
+$--color-text-placeholder: #999999 !default;
+
+$--color-success: $--color-primary !default;
+$--color-warning: #363636 !default;
+
+/* Fill 填充
+-------------------------- */
+$--fill-base: #eeeeee !default;
+$--fill-bg: #f6f5f5 !default;
+$--fill-line-big: #f5f5f5 !default;
+
+/* Stroke 描边
+-------------------------- */
+$--stroke-base: #e5e5e5 !default;
+
+/* Radius 圆角
+-------------------------- */
+$--radius-base: 4px !default;
+$--radius-mid: 10px !default;
+$--radius-half: 31px !default;
+
+/* z-index Z轴
+-------------------------- */
+$--index-normal: 1 !default;
+$--index-top: 1000 !default;
+$--index-popper: 2000 !default;
+
+/* Size
+-------------------------- */
+$--size-base: 14px !default;
+
+/* Font 字体
+-------------------------- */
+$--font-size-base: 13px !default;
+$--font-size-small: 12px !default;
+$--font-size-large: 16px !default;
+$--font-color-disabled-base: #bbb !default;
+$--font-weight-primary: 500 !default;
+$--font-line-height-primary: 22px !default;
+
+/* Header
+  --------------------------*/
+  $--header-padding: 0 12px !default;
+
+  /* Footer
+  --------------------------*/
+  $--footer-padding: 0 12px !default;
+
+  /* Main
+  --------------------------*/
+  $--main-padding: 12px !default;
