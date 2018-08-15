@@ -1,0 +1,17 @@
+/* 全局基本设置 */
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: $--font-size-base;
+  color: $--color-text-regular;
+}
+

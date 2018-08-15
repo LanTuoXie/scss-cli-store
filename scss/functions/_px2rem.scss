@@ -1,0 +1,6 @@
+/* px 转 rem  */
+// $px 为数字不要带单位
+@function px2rem ($px) {
+	$rem : 16;
+	@return ( $px / $rem) + rem;
+}

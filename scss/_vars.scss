@@ -62,13 +62,17 @@ $--font-weight-primary: 500 !default;
 $--font-line-height-primary: 22px !default;
 
 /* Header
-  --------------------------*/
-  $--header-padding: 0 12px !default;
+--------------------------*/
+$--header-padding: 0 12px !default;
 
-  /* Footer
-  --------------------------*/
-  $--footer-padding: 0 12px !default;
+/* Footer
+--------------------------*/
+$--footer-padding: 0 12px !default;
 
-  /* Main
-  --------------------------*/
-  $--main-padding: 12px !default;
+/* Main
+--------------------------*/
+$--main-padding: 12px !default;
+
+/* Popper
+--------------------------*/
+$--pop-bg: rgba(0, 0, 0, 0.4);

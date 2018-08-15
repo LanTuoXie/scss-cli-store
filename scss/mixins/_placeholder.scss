@@ -1,0 +1,6 @@
+/* input placeholder style */
+@mixin input-placeholder () {
+	&::-webkit-input-placeholder{
+		@content;
+	}
+}

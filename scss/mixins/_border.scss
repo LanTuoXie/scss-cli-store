@@ -1,0 +1,56 @@
+/*
+  border-radius
+  $borderMap: (top-left: 5px, top-right: 5px, bottom-left: 5px, bottom-right: 5px)
+ */
+ $border-radius: (
+  top-left: $--radius-base,
+  top-right: $--radius-base,
+  bottom-left: $--radius-base,
+  bottom-right: $--radius-base
+);
+@mixin border-pos ($borderMap: $border-radius) {
+  $props: map-keys($borderMap);
+  $values: map-values($borderMap);
+  $index: 1;
+
+  @each $prop in $props{
+    $str: border-#{ $prop }-radius;
+    $value: nth($values, $index);
+
+    #{ $str }: $value;
+
+    $index: $index + 1;
+  }
+}
+
+/*
+  圆角和1px边框
+ */
+@mixin border-onePx (
+  $border-color,
+  $border-radius,
+  $border-before-radius
+) {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    position: relative;
+    border: 0;
+
+    &:before{
+      content: "";
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid $border-color;
+      box-sizing: border-box;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+      padding: 1px;
+      border-radius: $border-before-radius;
+      pointer-events: none;
+    }
+  }
+}
