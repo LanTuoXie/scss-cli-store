@@ -1,0 +1,23 @@
+// 全局变量
+@import './scss/vars';
+
+// functions
+@import './scss/functions';
+
+// mixins
+@import './scss/mixins';
+
+// 占位符：用于@extend，使用@extend只能继承占位符
+@import './scss/placeholder';
+
+// 基本结构和布局
+@import './scss/base';
+@import './scss/layout';
+@import './scss/state';
+@import './scss/spc';
+@import './scss/animations';
+
+// 全局模块
+@import './scss/blocks.scss';
+
+// 组件和容器
